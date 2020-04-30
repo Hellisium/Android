@@ -38,20 +38,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textColor="#2e2a29"
-                android:text="Info etudiant" />
-
-            <TextView
                 android:id="@+id/Nom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:textColor="#2e2a29"
-                android:text="Nom et prénom" />
+                android:text="@string/nom"/>
 
             <TextView
                 android:id="@+id/Email"

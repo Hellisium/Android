@@ -17,7 +17,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     protected void showBackBtn(){
-        ImageView imageView=findViewById(R.id.imageViewClose);
+        ImageView imageView=findViewById(R.id.boutonRetour);
         if(imageView!=null) {
             imageView.setVisibility(View.VISIBLE);
             imageView.setOnClickListener(this);
@@ -38,7 +38,7 @@ public class DemoActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.imageViewClose:
+            case R.id.boutonRetour:
                 finish();
                 break;
         }

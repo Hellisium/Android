@@ -5,20 +5,20 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="fr.epsi.TPAndroid.TPAndroid"
+        android:name=".TPAndroid"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="fr.epsi.TPAndroid.ProduitDetailActivity"/>
-        <activity android:name="fr.epsi.TPAndroid.ProduitsActivity"></activity>
-        <activity android:name="fr.epsi.TPAndroid.RayonActivity"></activity>
-        <activity android:name="fr.epsi.TPAndroid.StudentActivity"></activity>
-        <activity android:name="fr.epsi.TPAndroid.EtudiantsActivity"/>
-        <activity android:name="fr.epsi.TPAndroid.HomeActivity"/>
-        <activity android:name="fr.epsi.TPAndroid.SplashScreenActivity">
+        <activity android:name=".ProduitDetailActivity"></activity>
+        <activity android:name=".ProduitsActivity" />
+        <activity android:name=".RayonActivity" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".EtudiantsActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
