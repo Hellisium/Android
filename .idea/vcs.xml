@@ -2,7 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Anddroid" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Andrea/androidStudio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Demo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/androidStudio" vcs="Git" />
   </component>
 </project>

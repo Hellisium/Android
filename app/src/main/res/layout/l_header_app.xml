@@ -16,14 +16,14 @@
             android:background="@android:color/holo_red_light"/>
 
         <ImageView
-            android:id="@+id/imageViewClose"
+            android:id="@+id/boutonRetour"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="20dp"
             android:visibility="gone"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@drawable/fleche" />
 
     </RelativeLayout>
     <RelativeLayout
