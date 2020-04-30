@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#D8DBD2">
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/contours">
         <ImageView
             android:id="@+id/imageViewProduct"
             android:layout_width="120dp"
@@ -23,17 +23,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name"
-                android:textSize="25dp"
+                android:textSize="16dp"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:id="@+id/textViewDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="email"
-                android:textSize="14dp"
+                android:text="description"
+                android:textSize="14sp"
                 android:textColor="@android:color/black"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:maxLines="2"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

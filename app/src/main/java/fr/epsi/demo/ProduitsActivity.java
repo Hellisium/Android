@@ -36,7 +36,7 @@ public class ProduitsActivity extends DemoActivity {
 
         setTitle(rayons.getTitle());
         ListView listView = findViewById(R.id.listViewProducts);
-        ProduitAdapter = new ProduitAdapter(this,R.layout.c_productlist, produits);
+        ProduitAdapter = new ProduitAdapter(this,R.layout.c_produits, produits);
         listView.setAdapter(ProduitAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -76,7 +76,6 @@ public class ProduitsActivity extends DemoActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        displayToast(String.valueOf(produits.size()));
         ProduitAdapter.notifyDataSetChanged();
     }
 }

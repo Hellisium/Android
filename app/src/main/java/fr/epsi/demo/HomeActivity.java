@@ -11,17 +11,17 @@ public class HomeActivity extends DemoActivity implements View.OnClickListener {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setContentView(R.layout.activity_home);
         super.onCreate(savedInstanceState);
-        findViewById(R.id.buttonA).setOnClickListener(this);
-        findViewById(R.id.buttonListNames).setOnClickListener(this);
+        findViewById(R.id.Etudiants).setOnClickListener(this);
+        findViewById(R.id.Magasin).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonA:
+            case R.id.Etudiants:
                 EtudiantsActivity.display(HomeActivity.this);
                 break;
-            case R.id.buttonListNames:
+            case R.id.Magasin:
                 RayonActivity.display(HomeActivity.this);
                 break;
         }

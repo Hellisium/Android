@@ -5,23 +5,18 @@ import org.json.JSONObject;
 import java.io.Serializable;
 
 public class Student implements Serializable {
-    private String photo="";
     private String nom="";
     private String prenom="";
     private String email="";
+    private String groupe="";
 
-    public Student(String nom, String prenom, String email) {
-        nom = nom;
-        prenom = prenom;
-        email = email;
-    }
 
-    public String getPhoto() {
-        return photo;
-    }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public Student(String nom, String prenom, String email, String groupe) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.groupe = groupe;
     }
 
     public String getNom() {
@@ -47,6 +42,10 @@ public class Student implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getGroupe() { return groupe; }
+
+    public void setGroupe(String groupe) { this.groupe = groupe; }
 
 
 

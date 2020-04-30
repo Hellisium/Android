@@ -26,7 +26,7 @@ public class ProduitAdapter extends ArrayAdapter<Produit>  {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
         LayoutInflater li = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView =  li.inflate(R.layout.c_productlist, null);
+        convertView =  li.inflate(R.layout.c_produits, null);
 
         TextView textViewNomProduit=convertView.findViewById(R.id.textViewNomProduit);
         TextView textViewDescription = convertView.findViewById(R.id.textViewDescription);

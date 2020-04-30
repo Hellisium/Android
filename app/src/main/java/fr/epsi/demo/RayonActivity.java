@@ -68,7 +68,6 @@ public class RayonActivity extends DemoActivity{
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        displayToast(String.valueOf(rayons.size()));
         rayonAdapter.notifyDataSetChanged();
     }
 }

@@ -11,10 +11,10 @@ public class EtudiantsActivity extends DemoActivity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.Maxime:
-                    StudentActivity.display(EtudiantsActivity.this, new Student("HOLEC","Maxime","maxime.holec@epsi.fr"));
+                    StudentActivity.display(EtudiantsActivity.this, new Student("HOLEC","Maxime","maxime.holec@epsi.fr","groupe : 2"));
                     break;
                 case R.id.Andrea:
-                    StudentActivity.display(EtudiantsActivity.this, new Student("Cicirello","Andrèa","andrea.cicirello@epsi.fr"));
+                    StudentActivity.display(EtudiantsActivity.this, new Student("CICIRELLO","Andrea","andrea.cicirello@epsi.fr","groupe : 2"));
                     break;
             }
         }
@@ -31,6 +31,7 @@ public class EtudiantsActivity extends DemoActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etudiants);
         showBackBtn();
+
         findViewById(R.id.Maxime).setOnClickListener(groupButtonOnClick);
         findViewById(R.id.Andrea).setOnClickListener(groupButtonOnClick);
         setTitle("Infos");

@@ -1,11 +1,8 @@
 package fr.epsi.demo;
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.squareup.picasso.Picasso;
 
 import fr.epsi.demo.model.Student;
 
@@ -23,24 +20,32 @@ public class StudentActivity extends DemoActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student);
+        setContentView(R.layout.c_student);
         showBackBtn();
+
         students=(Student) getIntent().getExtras().get("etudiant");
+        //Titre
         setTitle(students.getNom());
         TextView textViewNom= findViewById(R.id.Nom);
-        textViewNom.setText(students.getNom());
-        TextView textViewPrenom= findViewById(R.id.Prenom);
-        textViewPrenom.setText(students.getPrenom());
+        //Infos etudiant
+        textViewNom.setText(students.getNom()+" "+students.getPrenom());
+
+        //Email etudiant
         TextView textViewEmail= findViewById(R.id.Email);
         textViewEmail.setText(students.getEmail());
+
+        TextView textViewGroupe = findViewById(R.id.Groupe);
+        textViewGroupe.setText(students.getGroupe());
+        
         ImageView imageViewAvatar = findViewById(R.id.Photo);
 
-        switch (students.getNom()) {
-            case "HOLEC Maxime":
-                imageViewAvatar.setImageResource(R.drawable.ic_launcher_foreground);
+        //Changement de photo selon le prenom
+        switch (students.getPrenom()) {
+            case "Maxime":
+                imageViewAvatar.setImageResource(R.drawable.maxime);
                 break;
-            case "Cicirello Andrea":
-                imageViewAvatar.setImageResource(R.drawable.ic_launcher_foreground);
+            case "Andrea":
+                imageViewAvatar.setImageResource(R.drawable.andrea);
                 break;
 
         }
